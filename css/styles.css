@@ -1,0 +1,207 @@
+/*header {
+	margin-bottom:30px;
+}*/
+#main-content-wrapper {
+    height: 85%;
+    min-height: 85%;
+    min-width: 80%;
+}
+@media only screen and (max-device-width: 700px) {
+    #main-content-wrapper {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #main-content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+button:focus {
+  outline: none !important;
+  background-color:#ffffff!important; 
+}
+/*#region CHART*/
+@media only screen and (max-device-width: 700px) {
+    #main-content {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+/*svg style*/
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+
+    .line {
+      fill: none;
+      stroke: steelblue;
+      stroke-width: 1.5px;
+    }
+
+    .dot {
+      fill: white;
+      stroke: steelblue;
+      stroke-width: 1.5px;
+    }
+
+/*chart navigation style*/
+    #chart-navigation{
+        text-align:center;
+        margin-bottom: 20px;
+    }
+    #form-chart{
+        width: 45%;
+        display: inline-block;
+        margin:auto auto auto 0;
+    }
+
+    #sel-chart{
+        width: 90%;
+    }
+
+    #btn-clearChart{
+
+    }
+
+    .block { text-align:left;}
+    .center { margin:auto;}
+    .left { margin:auto auto auto 0;}
+    .right { margin:auto 0 auto auto;}
+
+/*#endregion*/
+
+/*#region CALCULATION METHOD*/
+.equation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h4{
+    margin-top: 30px;
+}
+
+p{
+    text-align: justify;
+}
+/*#endregion*/
+
+/*#region LIST*/
+.flag{
+    height: 20px;
+    width: 36px;
+    margin-right: 4px;
+}
+
+.arrow {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.team-in-list{
+    display: inline;
+    cursor: pointer;
+}
+
+.team-in-list:hover{
+    text-decoration:underline;
+    color: rgb(168, 162, 162);
+}
+
+@media only screen and (max-device-width: 700px) {
+    .list-form{
+        display: table!important; 
+        margin: 0 auto!important; 
+        width: 75%!important;
+    }
+
+    .list-buttons{
+        text-align: center!important;
+    }
+}
+
+.loading{
+opacity: 0.5;
+pointer-events: none;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+    animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+span.glyphicon-refresh {
+    font-size: 5em;
+}
+
+.dataTables_processing {
+top: 25%!important;  /*override for small devices; normal is 50%*/
+}
+/*#endregion*/
+
+/*#region EXAMPLES*/
+/*powinno top byæ przeliczane wbr zaleznosci body wysokosci dostepnej przestrzeni; choæ mo¿e jednak nie*/
+#carosuel-content img{
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+.carousel-control.left {
+    background-image:none;
+}
+.carousel-control.right {
+    background-image:none;
+}
+
+.carousel-control .glyphicon,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: -70px;
+  margin-left: -10px;
+  font-family: serif;
+  font-size: 80px;
+  color: grey;
+}
+
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+
+.carousel-caption h1 
+{
+    color: #333;
+    text-shadow: none;
+}
+.carousel-caption p 
+{
+    color: #333;
+    text-shadow: none;
+}
+
+/*#endregion*/

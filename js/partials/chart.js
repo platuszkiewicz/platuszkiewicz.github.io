@@ -20,7 +20,7 @@ var Chart = (function () {
 
         var teamId;
 
-        $.getJSON('./data/teams/teamsList.json', function (teamsArray) {
+        $.getJSON('./data/teams/TeamsList.json', function (teamsArray) {
             // change 'Name' property to 'text' - select2 requirement
             for (var i = 0; i < teamsArray.length; i++) {
                 if (teamsArray[i]['Name'] == teamName) { // get team id

@@ -23,7 +23,7 @@ var List = (function () {
 
     function fillSelects_list(callbackOnlyOnInit, rankingId) {
         // fill years
-        $.getJSON('./data/rankings/_rankingsList.json', function (dataString) {
+        $.getJSON('./data/rankings/RankingsList.json', function (dataString) {
             // get year-data
             var years = [];
             var rankingIdYear = -1;
@@ -78,7 +78,7 @@ var List = (function () {
             .remove()
             .end()
         ;
-        $.getJSON('./data/rankings/_rankingsList.json', function (dataString) {
+        $.getJSON('./data/rankings/RankingsList.json', function (dataString) {
             var months = [];
             // get months-data available for year
             for (var i = 0; i < dataString.length; i++) {

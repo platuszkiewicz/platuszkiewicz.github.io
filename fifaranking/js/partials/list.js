@@ -259,7 +259,7 @@ var List = (function () {
         }
 
         // ******** Set params ***********
-        $.getJSON('./data/rankings/_rankingsList.json', function (data) {
+        $.getJSON('./data/rankings/RankingsList.json', function (data) {
             LIST_PARAMS.lastId = data[data.length - 1].Id;
             LIST_PARAMS.id = id ? id : LIST_PARAMS.lastId;
             LIST_PARAMS.isLastId = (LIST_PARAMS.id == LIST_PARAMS.lastId) ? true : false;
